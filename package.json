@@ -1,17 +1,17 @@
 {
-  "name": "prototype-custom-package",
-  "version": "1.0.0",
+  "name": "chronos-helper",
+  "version": "1.0.1",
   "description": "A handy tool for date manipulation.",
-  "main": "index.js",
+  "main": "src/index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
+  "keywords": ["date", "utility", "manipulation", "javascript", "npm-package"],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^29.7.0"
   }

@@ -44,7 +44,7 @@ formatDate(new Date('2024-11-19'), 'YYYY-MM-DD'); // "2024-11-19"
 formatDate(new Date('2024-11-19'), 'DD/MM/YYYY'); // "19/11/2024"
 ```
 
-1. `addDays(date,days)`
+2. `addDays(date,days)`
 Adds a specified number of days to a JavaScript `Date` objet.
 - **Parameters**;
   - `date`: A JavaScript `Date` object
