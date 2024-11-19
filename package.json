@@ -1,6 +1,6 @@
 {
   "name": "chronos-helper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A handy tool for date manipulation.",
   "main": "src/index.js",
   "directories": {
@@ -9,7 +9,13 @@
   "scripts": {
     "test": "jest"
   },
-  "keywords": ["date", "utility", "manipulation", "javascript", "npm-package"],
+  "keywords": [
+    "date",
+    "utility",
+    "manipulation",
+    "javascript",
+    "npm-package"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
