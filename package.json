@@ -1,6 +1,6 @@
 {
   "name": "chronos-helper",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "description": "A handy tool for date manipulation.",
   "main": "src/index.js",
   "directories": {
@@ -20,5 +20,9 @@
   "license": "MIT",
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.2.0"
   }
 }
