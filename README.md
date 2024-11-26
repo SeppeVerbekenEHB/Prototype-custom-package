@@ -1,11 +1,11 @@
-# Prototype-custom-package
+# chronos-helper
 A lightweight and easy-to-use NPM toolkit for date manipulation tasks. Perform operations like formatting dates, adding days, checking weekends, converting time zones, add business days, and much more.
 
 ## Installation
 
 Install the package via NPM:
 ```bash
-npm install date-utils
+npm install chronos-helper
 ```
 
 ## Usage
@@ -64,6 +64,7 @@ console.log(calculateBusinessDays(new Date('2024-11-01'), new Date('2024-11-10')
 ```
 
 ## Features
+<br>
 
 ### `formatDate(date, format)`
 Formats a JavaScript `Date` object into a specified string format.
@@ -90,8 +91,9 @@ Adds a specified number of days to a JavaScript `Date` objet.
 ```javascript
 addDays(new Date('2024-11-19'), 5); // "2024-11-24"
 ```
+<br><br>
 
-### isWeekend(date)
+### `isWeekend(date)`
 Checks if a given date falls on a weekend (Saturday or Sunday)
 
 - **Parameters**:
@@ -103,6 +105,7 @@ Checks if a given date falls on a weekend (Saturday or Sunday)
 isWeekend(new Date('2024-11-23')); // true (Saturday)
 isWeekend(new Date('2024-11-19')); // false (Tuesday)
 ```
+<br><br>
 
 ### `toReadableString(date)`
 Converts a JavaScript `Date` object into a human-readable string.
@@ -115,6 +118,7 @@ Converts a JavaScript `Date` object into a human-readable string.
 ```javascript
 toReadableString(new Date('2024-11-19')); // "19 November 2024"
 ```
+<br><br>
 
 ### `convertTimeZone(date, fromZone, toZone)`
 Converts a `Date` from one time zone to another.
@@ -129,6 +133,7 @@ Converts a `Date` from one time zone to another.
 ```javascript
 convertTimeZone(new Date('2024-11-19T12:00:00Z'), 'UTC', 'Europe/Brussels');
 ```
+<br><br>
 
 ### `timeAgo(date)`
 Calculates how long ago a given date occurred relative to now.
@@ -141,6 +146,7 @@ Calculates how long ago a given date occurred relative to now.
 ```javascript
 timeAgo(new Date('2024-11-15')); // "4 days ago"
 ```
+<br><br>
 
 ### `timeAgo(date)`
 Calculates how far a date is in the future relative to now.
@@ -153,6 +159,7 @@ Calculates how far a date is in the future relative to now.
 ```javascript
 timeUntil(new Date('2024-11-25')); // "6 days from now"
 ```
+<br><br>
 
 ### `getRecurringDates(startDate, frequency, occurrences)`
 Generates recurring dates based on a starting date and frequency.
@@ -167,6 +174,7 @@ Generates recurring dates based on a starting date and frequency.
 ```javascript
 getRecurringDates(new Date('2024-11-01'), 'weekly', 3); // Recurring weekly dates
 ```
+<br><br>
 
 ### `isBusinessDay(date)`
 Checks if a given date falls on a business day (Monday to Friday).
@@ -175,6 +183,7 @@ Checks if a given date falls on a business day (Monday to Friday).
 ```javascript
 isBusinessDay(new Date('2024-11-19')); // true
 ```
+<br><br>
 
 ### `getNextBusinessDay(date)`
 Finds the next business day after a given date.
@@ -183,6 +192,7 @@ Finds the next business day after a given date.
 ```javascript
 getNextBusinessDay(new Date('2024-11-23')); // Monday, 2024-11-25
 ```
+<br><br>
 
 ### `calculateBusinessDays(startDate, endDate)`
 Calculates the number of business days between two dates.
@@ -191,6 +201,7 @@ Calculates the number of business days between two dates.
 ```javascript
 calculateBusinessDays(new Date('2024-11-01'), new Date('2024-11-10')); // 6
 ```
+<br><br>
 
 ## Testing
 
