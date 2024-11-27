@@ -79,6 +79,7 @@ Formats a JavaScript `Date` object into a specified string format.
 formatDate(new Date('2024-11-19'), 'YYYY-MM-DD'); // "2024-11-19"
 formatDate(new Date('2024-11-19'), 'DD/MM/YYYY'); // "19/11/2024"
 ```
+<br><br>
 
 ### `addDays(date,days)`
 Adds a specified number of days to a JavaScript `Date` objet.

@@ -1,5 +1,5 @@
 /**
- * Formatteert een datum in een opgegeven formaat
+ * Formats a date according to a given format string.
  * @param {Date} date - De datum
  * @param {string} format - Het gewenste formaat, bijvoorbeeld 'YYYY-MM-DD'
  * @returns {string} De geformatteerde datum
@@ -16,7 +16,7 @@ function formatDate(date, format) {
 }
 
 /**
- * Voegt dagen toe aan een datum
+ * Adds a number of days to a given date.
  * @param {Date} date - De oorspronkelijke datum
  * @param {number} days - Aantal dagen om toe te voegen
  * @returns {Date} De nieuwe datum
@@ -28,7 +28,7 @@ function addDays(date, days) {
 }
 
 /**
- * Controleert of een datum in het weekend valt
+ * Controlls if a given date is a weekend day
  * @param {Date} date - De datum
  * @returns {boolean} True als het weekend is, anders false
  */
@@ -38,7 +38,7 @@ function isWeekend(date) {
 }
 
 /**
- * Converteert een datum naar een leesbare string
+ * converts a date to a readable string
  * @param {Date} date - De datum
  * @returns {string} Een leesbare weergave van de datum, bijvoorbeeld '19 november 2024'
  */
@@ -58,7 +58,7 @@ function toReadableString(date) {
 const { toZonedTime } = require('date-fns-tz');
 const { utcToZonedTime } = require('date-fns-tz');
 /**
- * Converts a date from one time zone to another.
+ * Converts a date from one time zone to another. and returns a Date object
  * @param {Date} date - The date to be converted.
  * @param {string} toZone - The target time zone (e.g., 'America/New_York').
  * @returns {Date} - The converted date in the target time zone.
@@ -68,7 +68,7 @@ function convertTimeZone(date, toZone) {
 }
 
 /**
- * Calculates how long ago a given date occurred relative to now.
+ * Calculates how long ago a given date occurred relative to now. and returns a string
  * @param {Date} date - The date to compare.
  * @returns {string} - A string representing the relative time (e.g., "2 days ago").
  */
@@ -89,7 +89,7 @@ function timeAgo(date) {
 }
 
 /**
- * Calculates how far in the future a given date is relative to now.
+ * Calculates how far in the future a given date is relative to now. and returns a string
  * @param {Date} date - The date to compare.
  * @returns {string} - A string representing the relative time (e.g., "3 days from now").
  */
